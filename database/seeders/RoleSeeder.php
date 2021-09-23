@@ -38,7 +38,7 @@ class RoleSeeder extends Seeder
 
         $permiso = Permission::create(['name'=>'fichaTratamiento.index','description'=>'Visualizar Ficha de Tratamiento']);
 
-        $permiso->syncRoles([$admin,$supervisor]);
+        $permiso->syncRole([$admin,$supervisor]);
     
         Permission::create(['name'=>'fichaTratamiento.create','description'=>'Crear Ficha de Tratamiento'])->syncRoles([$admin,$supervisor]);
         
