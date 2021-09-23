@@ -34,10 +34,21 @@ class RoleSeeder extends Seeder
                            'description'=>'Eliminar Ficha de Animales'])->syncRoles([$admin]);
         
        
-        //////////////////////////////////////////////////////////////////////////////
-        Permission::create(['name'=>'fichaParto.index',
-                           'description'=>'Visualizar Ficha de Parto'])->syncRoles([$admin]);
+
+
+
+
+
+
+
+
+
+                           
+        $permission=Permission::create(['name'=>'fichaParto.index',
+                           'description'=>'Visualizar Ficha de Parto']);
         
+                           $admin->givePermissionTo($permission);
+
         Permission::create(['name'=>'fichaParto.create',
                            'description'=>'Crear Ficha de Parto'])->syncRoles([$admin]);
         
