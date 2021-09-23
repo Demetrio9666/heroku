@@ -36,7 +36,7 @@ class RoleSeeder extends Seeder
         Permission::create(['name'=>'fichaParto.destroy','description'=>'Eliminar Ficha de Parto'])->syncRoles([$admin]);
         
 
-        $permiso = Permission::create(['name'=>'fichaTratamiento.index','description'=>'Visualizar Ficha de Tratamiento']);
+        /*$permiso = Permission::create(['name'=>'fichaTratamiento.index','description'=>'Visualizar Ficha de Tratamiento']);
 
         $permiso->syncRole([$admin,$supervisor]);
     
@@ -266,7 +266,7 @@ class RoleSeeder extends Seeder
                             'description'=>'Eliminar Usuarios'])->syncRoles([$admin]);
 
         Permission::create(['name'=>'actividad.index',
-                            'description'=>'Visualizar Actividad de Usuario'])->syncRoles([$admin]);
+                            'description'=>'Visualizar Actividad de Usuario'])->syncRoles([$admin]);*/
 
        
         
