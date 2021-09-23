@@ -35,7 +35,7 @@ class RoleSeeder extends Seeder
         
         Permission::create(['name'=>'fichaParto.destroy','description'=>'Eliminar Ficha de Parto'])->syncRoles([$admin]);
 
-        Permission::create(['name'=>'fichaTratamiento.index','description'=>'Visualizar Ficha de Tratamiento'])->syncRoles([$admin,$supervisor]);
+        Permission::create(['name'=>'fichaTratamiento.index','description'=>'Visualizar Ficha de Tratamiento'])->assignRole([$admin,$supervisor]);
     
         Permission::create(['name'=>'fichaTratamiento.create','description'=>'Crear Ficha de Tratamiento'])->syncRoles([$admin,$supervisor]);
         
@@ -47,8 +47,7 @@ class RoleSeeder extends Seeder
     
         Permission::create(['name'=>'fichaReproduccionM.create','description'=>'Crear Ficha Reproducción por Monta Interna'])->syncRoles([$admin,$supervisor,$invitado]);
         
-        Permission::create(['name'=>'fichaReproduccionM.edit',
-                           'description'=>'Editar Ficha Reproducción por Monta Interna'])->syncRoles([$admin,$supervisor,$invitado]);
+        Permission::create(['name'=>'fichaReproduccionM.edit','description'=>'Editar Ficha Reproducción por Monta Interna'])->syncRoles([$admin,$supervisor,$invitado]);
         
         Permission::create(['name'=>'fichaReproduccionM.destroy',
                            'description'=>'Eliminar Ficha Reproducción por Monta Interna'])->syncRoles([$admin,$supervisor,$invitado]);
