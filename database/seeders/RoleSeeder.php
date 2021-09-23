@@ -35,7 +35,7 @@ class RoleSeeder extends Seeder
         
         Permission::create(['name'=>'fichaParto.destroy','description'=>'Eliminar Ficha de Parto'])->syncRoles([$admin]);
 
-        Permission::create(['name'=>'fichaTratamiento.index','description'=>'Visualizar Ficha de Tratamiento'])->roles()->sync(array([$admin,$supervisor]));
+        Permission::create(['name'=>'fichaTratamiento.index','description'=>'Visualizar Ficha de Tratamiento'])->roles()->sync([$admin,$supervisor]);
     
         Permission::create(['name'=>'fichaTratamiento.create','description'=>'Crear Ficha de Tratamiento'])->syncRoles([$admin,$supervisor]);
         
