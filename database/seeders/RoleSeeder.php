@@ -18,7 +18,5 @@ class RoleSeeder extends Seeder
         Role::create(['rol'=>'ADMINISTRADOR']);
         Role::create(['rol'=>'SUPERVISOR']);
         Role::create(['rol'=>'INVITADO']);
-       
-       
     }
 }
