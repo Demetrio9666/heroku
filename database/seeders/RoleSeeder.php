@@ -24,7 +24,7 @@ class RoleSeeder extends Seeder
         Permission::create(['name'=>'fichaAnimal.index',
                            'description'=>'Visualizar Ficha de Animales'])->syncRoles([$admin]);
 
-        Permission::create(['name'=>'fichaAnimal.create',
+        /*Permission::create(['name'=>'fichaAnimal.create',
                            'description'=>'Crear Ficha de Animales'])->syncRoles([$admin]);
      
         Permission::create(['name'=>'fichaAnimal.edit',
@@ -34,20 +34,10 @@ class RoleSeeder extends Seeder
                            'description'=>'Eliminar Ficha de Animales'])->syncRoles([$admin]);
         
        
-
-
-
-
-
-
-
-
-
-
-        $permission=Permission::create(['name'=>'fichaParto.index','description'=>'Visualizar Ficha de Parto']);
+        //////////////////////////////////////////////////////////////////////////////
+        Permission::create(['name'=>'fichaParto.index',
+                           'description'=>'Visualizar Ficha de Parto'])->syncRoles([$admin]);
         
-                           $admin->givePermissionTo($permission);
-
         Permission::create(['name'=>'fichaParto.create',
                            'description'=>'Crear Ficha de Parto'])->syncRoles([$admin]);
         
@@ -312,7 +302,7 @@ class RoleSeeder extends Seeder
                             'description'=>'Eliminar Usuarios'])->syncRoles([$admin]);
 
         Permission::create(['name'=>'actividad.index',
-                            'description'=>'Visualizar Actividad de Usuario'])->syncRoles([$admin]);
+                            'description'=>'Visualizar Actividad de Usuario'])->syncRoles([$admin]);*/
 
        
         
