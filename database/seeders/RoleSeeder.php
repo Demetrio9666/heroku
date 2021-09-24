@@ -43,9 +43,8 @@ class RoleSeeder extends Seeder
 
 
 
-                           
-        $permission=Permission::create(['name'=>'fichaParto.index',
-                           'description'=>'Visualizar Ficha de Parto']);
+
+        $permission=Permission::create(['name'=>'fichaParto.index','description'=>'Visualizar Ficha de Parto']);
         
                            $admin->givePermissionTo($permission);
 
